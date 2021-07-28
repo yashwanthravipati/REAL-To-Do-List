@@ -11,6 +11,7 @@
 		C82F9D6026B1B76900D9706D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82F9D5F26B1B76900D9706D /* ContentView.swift */; };
 		C82F9D6226B1B76D00D9706D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82F9D6126B1B76D00D9706D /* Assets.xcassets */; };
 		C82F9D6526B1B76D00D9706D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82F9D6426B1B76D00D9706D /* Preview Assets.xcassets */; };
+		C82F9D6F26B1BCC600D9706D /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82F9D6E26B1BCC600D9706D /* ToDoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		C82F9D6126B1B76D00D9706D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82F9D6426B1B76D00D9706D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C82F9D6626B1B76D00D9706D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C82F9D6E26B1BCC600D9706D /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				C82F9D5D26B1B76900D9706D /* REAL_To_Do_ListApp.swift */,
 				C82F9D5F26B1B76900D9706D /* ContentView.swift */,
+				C82F9D6E26B1BCC600D9706D /* ToDoList.swift */,
 				C82F9D6126B1B76D00D9706D /* Assets.xcassets */,
 				C82F9D6626B1B76D00D9706D /* Info.plist */,
 				C82F9D6326B1B76D00D9706D /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C82F9D6026B1B76900D9706D /* ContentView.swift in Sources */,
+				C82F9D6F26B1BCC600D9706D /* ToDoList.swift in Sources */,
 				C82F9D5E26B1B76900D9706D /* REAL_To_Do_ListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
