@@ -14,22 +14,30 @@ struct ContentView: View {
          ToDoItem(priority: "Low", description: "Eat a donut", dueDate: Date())]
     var body: some View {
         NavigationView {
-                List {
-                    ForEach(toDoItems) { item in
-                       Text(item.description)
-                                        }
-                        .onMove(perform: { indices, newOffset in
-                            toDoItems.move(fromOffsets: indices, toOffset: newOffset)
-                                       })
-                        .onDelete(perform: { indexSet in
-                            toDoItems.remove(atOffsets: indexSet)
-                                       })
+            List {
+                ForEach(toDoItems) { item in
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.priority)
+                                .font(.headline)
+                            Text(item.description)
+                        }
+                        Spacer()
+                        Text(item.dueDate, style: .date)
                     }
-                    .navigationBarTitle("To Do List", displayMode: .inline)
-                    .navigationBarItems(leading: EditButton())
                 }
+                .onMove(perform: { indices, newOffset in
+                    toDoItems.move(fromOffsets: indices, toOffset: newOffset)
+                })
+                .onDelete(perform: { indexSet in
+                    toDoItems.remove(atOffsets: indexSet)
+                })
             }
+            .navigationBarTitle("To Do List", displayMode: .inline)
+            .navigationBarItems(leading: EditButton())
         }
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
